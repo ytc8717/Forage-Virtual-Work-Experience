@@ -1,2 +1,2 @@
-# Forage-Virtual-Work-Experience
-Forage Virtual Work Experience Projects
+# Forage
+Collection of Forage Virtual Work Experience Projects
