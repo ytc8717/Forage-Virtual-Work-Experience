@@ -1,34 +1,16 @@
+import React from 'react';
 import './App.css';
-
-function Banner({title}) {
-  return (
-    <h1>{title}</h1>
-  );
-}
-
-function Exhibit({heading, child}) {
-  return (
-    <>
-      <h2>{heading}</h2>
-      <child/>
-    </>
-  );
-}
-
-function children() {
-  return (
-    <></>
-  );
-}
+import Banner from './Banner';
+import Exhibit from './Exhibit';
 
 function App() {
   return (
-    <>
-      <div className="App">
-        <Banner title="Sextant"/>
-        <Exhibit heading="tmp heading" child={<children/>} />
-      </div>
-    </>
+    <div className="App">
+      <Banner bannerText="Sextant"/>
+      <Exhibit name="ex1"/>
+      <Exhibit name="ex2"/>
+      <Exhibit name="ex2"/>
+    </div>
   );
 }
 
