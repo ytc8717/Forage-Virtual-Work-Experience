@@ -2,15 +2,18 @@ import React from 'react';
 import './App.css';
 import Banner from './Banner';
 import Exhibit from './Exhibit';
-import FetchIP from './FetchIP';
+import AddressDisplay from './AddressDisplay';
 
 function App() {
   return (
     <div className="App">
       <Banner bannerText="Sextant"/>
-      <Exhibit name="ex1" children={() => FetchIP('ipv4')}/>
-      <Exhibit name="ex2"/>
-      <Exhibit name="ex2"/>
+      <Exhibit name="Public IPv4 Address">
+        <AddressDisplay url='https://api.ipify.org?format=json' />
+      </Exhibit>
+      <Exhibit name="Public IPv6 Address">
+        <AddressDisplay url='https://api64.ipify.org?format=json' />
+      </Exhibit>
     </div>
   );
 }
