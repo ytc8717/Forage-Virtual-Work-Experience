@@ -1,5 +1,5 @@
 from abc import ABC
 
-class Tire(ABC):
+class Tires(ABC):
     def needs_service(self):
         pass
